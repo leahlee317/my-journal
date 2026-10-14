@@ -1,0 +1,60 @@
+---
+const pageTitle = "The Pieces — Sungwon Lee";
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{pageTitle}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo"><a href="/">Sungwon Lee</a></div>
+      <nav class="main-nav">
+        <a href="/pieces">The Pieces</a>
+        <a href="/thoughts">The Thoughts</a>
+        <a href="/interests">The Interests</a>
+      </nav>
+    </header>
+
+    <main class="page-container">
+      <h1>The Pieces</h1>
+      <p class="subtitle">Creative work, projects, and visual experiments.</p>
+
+      <div class="sub-categories-nav">
+        <a href="/pieces/fine-art">Fine Art & Illustration</a>
+        <a href="/pieces/tattooing">Tattooing</a>
+        <a href="/pieces/videos">Videos</a>
+        <a href="/pieces/photography">Photography</a>
+        <a href="/pieces/experiments">Experiments</a>
+      </div>
+
+      <!-- Placeholder sections for your categories -->
+      <section id="fine-art" class="content-section">
+        <h2>Fine Art & Illustration</h2>
+        <p class="placeholder-text">Projects and artworks will appear here.</p>
+      </section>
+
+      <section id="tattooing" class="content-section">
+        <h2>Tattooing</h2>
+        <p class="placeholder-text">Tattoo flash and skin work will appear here.</p>
+      </section>
+    </main>
+
+    <style>
+      body { background-color: #f7f6f2; color: #1a1a1a; font-family: 'Plus Jakarta Sans', sans-serif; padding: 2rem 3rem; margin: 0; }
+      .site-header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 2rem; border-bottom: 1px solid #e2e0d8; }
+      .logo a { font-weight: 700; text-decoration: none; color: #1a1a1a; }
+      .main-nav a { margin-left: 2rem; text-decoration: none; color: #666; font-size: 0.95rem; }
+      .page-container { max-width: 900px; margin: 3rem auto; }
+      h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+      .subtitle { font-family: 'Playfair Display', serif; font-style: italic; color: #666; font-size: 1.2rem; margin-bottom: 2rem; }
+      .sub-categories-nav { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 3rem; padding-bottom: 1rem; border-bottom: 1px solid #e2e0d8; }
+      .sub-categories-nav a { text-decoration: none; color: #1a1a1a; background: #fff; padding: 0.5rem 1rem; border: 1px solid #e2e0d8; border-radius: 4px; font-size: 0.9rem; }
+      .content-section { margin-bottom: 4rem; }
+      .content-section h2 { font-size: 1.5rem; margin-bottom: 1rem; }
+      .placeholder-text { color: #666; font-style: italic; }
+    </style>
+  </body>
+</html>

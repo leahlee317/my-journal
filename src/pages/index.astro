@@ -1,16 +1,166 @@
 ---
+const pageTitle = "Sungwon Lee — Portfolio & Archive";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{pageTitle}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">
+        <a href="/">Leah Lee</a>
+      </div>
+      <nav class="main-nav">
+        <a href="/pieces">The Pieces</a>
+        <a href="/thoughts">The Thoughts</a>
+        <a href="/interests">The Interests</a>
+      </nav>
+    </header>
+
+    <main class="landing-container">
+      <section class="hero">
+        <h1>My Journal</h1>
+        <p class="hero-subtitle">
+          Documenting artwork, tattooing, journal reflections, and everyday explorations.
+        </p>
+      </section>
+
+      <!-- Three Main Gateway Cards -->
+      <div class="gateway-grid">
+        <a href="/pieces" class="gateway-card">
+          <span class="gateway-num">01</span>
+          <h2>The Pieces</h2>
+          <p>Fine art, tattooing, videos, photography, experiments, and other works.</p>
+        </a>
+
+        <a href="/thoughts" class="gateway-card">
+          <span class="gateway-num">02</span>
+          <h2>The Thoughts</h2>
+          <p>A personal journal documenting experiences, creative challenges, and ideas.</p>
+        </a>
+
+        <a href="/interests" class="gateway-card">
+          <span class="gateway-num">03</span>
+          <h2>The Interests</h2>
+          <p>Library notes, plant collection, and café business project archives.</p>
+        </a>
+      </div>
+    </main>
+
+    <style>
+      :root {
+        --bg-color: #f7f6f2;
+        --text-color: #1a1a1a;
+        --accent-color: #666666;
+        --border-color: #e2e0d8;
+        --font-heading: 'Plus Jakarta Sans', sans-serif;
+        --font-serif: 'Playfair Display', serif;
+      }
+
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        font-family: var(--font-heading);
+        line-height: 1.6;
+        padding: 2rem 3rem;
+      }
+
+      .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .logo a {
+        font-weight: 700;
+        font-size: 1.25rem;
+        text-decoration: none;
+        color: var(--text-color);
+      }
+
+      .main-nav a {
+        margin-left: 2rem;
+        text-decoration: none;
+        color: var(--accent-color);
+        font-size: 0.95rem;
+      }
+
+      .main-nav a:hover { color: var(--text-color); }
+
+      .landing-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding-top: 5rem;
+      }
+
+      .hero {
+        margin-bottom: 4rem;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        letter-spacing: -0.02em;
+      }
+
+      .hero-subtitle {
+        font-family: var(--font-serif);
+        font-size: 1.35rem;
+        color: var(--accent-color);
+        font-style: italic;
+      }
+
+      .gateway-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+      }
+
+      .gateway-card {
+        background: #ffffff;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 2.5rem 2rem;
+        text-decoration: none;
+        color: var(--text-color);
+        transition: transform 0.2s ease, border-color 0.2s ease;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .gateway-card:hover {
+        transform: translateY(-4px);
+        border-color: #b5b3a8;
+      }
+
+      .gateway-num {
+        font-family: var(--font-serif);
+        color: var(--accent-color);
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+
+      .gateway-card h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+      }
+
+      .gateway-card p {
+        color: var(--accent-color);
+        font-size: 0.95rem;
+      }
+    </style>
+  </body>
 </html>

@@ -1,0 +1,34 @@
+---
+const pageTitle = "Photography — Sungwon Lee";
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{pageTitle}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo"><a href="/">Sungwon Lee</a></div>
+      <nav class="main-nav"><a href="/pieces">← Back to The Pieces</a></nav>
+    </header>
+    <main class="page-container">
+      <h1>Tattooing</h1>
+      <p class="subtitle">Flash pieces, skin work, and design process.</p>
+      <div class="gallery-grid">
+        <div class="placeholder-card">Tattoo work placeholder</div>
+      </div>
+    </main>
+    <style>
+      body { background-color: #f7f6f2; color: #1a1a1a; font-family: 'Plus Jakarta Sans', sans-serif; padding: 2rem 3rem; margin: 0; }
+      .site-header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 2rem; border-bottom: 1px solid #e2e0d8; }
+      .logo a, .main-nav a { text-decoration: none; color: #1a1a1a; font-size: 0.95rem; }
+      .page-container { max-width: 1000px; margin: 3rem auto; }
+      h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+      .subtitle { font-family: 'Playfair Display', serif; font-style: italic; color: #666; font-size: 1.2rem; margin-bottom: 3rem; }
+      .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+      .placeholder-card { background: #fff; height: 300px; border: 1px solid #e2e0d8; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #888; font-style: italic; }
+    </style>
+  </body>
+</html>

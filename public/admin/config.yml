@@ -1,0 +1,40 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "pieces"
+    label: "The Pieces"
+    folder: "src/content/pieces"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["Fine Art & Illustration", "Tattooing", "Videos", "Photography", "Experiments"]}
+      - {label: "Date", name: "date", widget: "date"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image"}
+
+  - name: "thoughts"
+    label: "The Thoughts"
+    folder: "src/content/thoughts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "date"}
+      - {label: "Journal Entry", name: "body", widget: "markdown"}
+
+  - name: "interests"
+    label: "The Interests"
+    folder: "src/content/interests"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Category / Topic Name (e.g., Library, Plants, Café)", name: "category_name", widget: "string"}
+      - {label: "Title / Item Name", name: "title", widget: "string"}
+      - {label: "Cover Image", name: "image", widget: "image", required: false}
+      - {label: "Notes & Reflections", name: "body", widget: "markdown"}

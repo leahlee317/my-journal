@@ -1,0 +1,55 @@
+---
+const pageTitle = "The Interests — Sungwon Lee";
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{pageTitle}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo"><a href="/">Sungwon Lee</a></div>
+      <nav class="main-nav">
+        <a href="/pieces">The Pieces</a>
+        <a href="/thoughts">The Thoughts</a>
+        <a href="/interests">The Interests</a>
+      </nav>
+    </header>
+
+    <main class="page-container">
+      <h1>The Interests</h1>
+      <p class="subtitle">An archive of books, plant care notes, and café business experiences.</p>
+
+      <div class="interests-grid">
+        <div class="interest-card">
+          <h2>Library</h2>
+          <p>Books read, notes, and personal thoughts.</p>
+        </div>
+        <div class="interest-card">
+          <h2>Plants</h2>
+          <p>Collection photographs, care notes, and growth updates.</p>
+        </div>
+        <div class="interest-card">
+          <h2>Café</h2>
+          <p>Business projects, operational notes, and lessons learned.</p>
+        </div>
+      </div>
+    </main>
+
+    <style>
+      body { background-color: #f7f6f2; color: #1a1a1a; font-family: 'Plus Jakarta Sans', sans-serif; padding: 2rem 3rem; margin: 0; }
+      .site-header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 2rem; border-bottom: 1px solid #e2e0d8; }
+      .logo a { font-weight: 700; text-decoration: none; color: #1a1a1a; }
+      .main-nav a { margin-left: 2rem; text-decoration: none; color: #666; font-size: 0.95rem; }
+      .page-container { max-width: 900px; margin: 3rem auto; }
+      h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+      .subtitle { font-family: 'Playfair Display', serif; font-style: italic; color: #666; font-size: 1.2rem; margin-bottom: 3rem; }
+      .interests-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; }
+      .interest-card { background: #ffffff; padding: 2rem; border: 1px solid #e2e0d8; border-radius: 6px; }
+      .interest-card h2 { font-size: 1.3rem; margin-bottom: 0.75rem; }
+      .interest-card p { color: #666; font-size: 0.95rem; }
+    </style>
+  </body>
+</html>
